@@ -42,7 +42,7 @@ app.use(logger());
 router.get('/',home);
 
 function *home() {
-  this.body = yield render('home', {name: 'weiwei sun'});
+  this.body = yield render('home', {});
 }
 
 // [GET]: Retrieve List of Companies
