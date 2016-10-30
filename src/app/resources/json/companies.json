@@ -1,0 +1,196 @@
+[
+    {
+        "order": 1,
+        "image": "1.png",
+        "name": "Intel",
+        "rating": 85.4,
+        "sector": "Technology",
+        "location": "United States",
+        "description": "Intel Corporationis an American multinational cor poration and technology company headquartered in Santa Clara, California that was founded by Gordon Moore (of Moore's Law fame) and Robert Noyce. It and AMD are the world's largest and highest valued semiconductor chip makers based on revenue., and is the inventor of the x86 series of microprocessors, the processors found in most personal computers (PCs).Intel also manufactures motherboard chipsets, network interface controllers and integrated circuits, flash memory, graphics chips, embedded processors and other devices related to communications and computing."
+    }, {
+        "order": 2,
+        "image": "2.png",
+        "name": "Volvo",
+        "rating": 92.1,
+        "sector": "Automotive",
+        "location": "Sweden",
+        "description": "The Volvo Group is a Swedish multinational manufacturing company headquartered in Gothenburg. While its core activity is the production, distribution and sale of trucks, buses and construction equipment, Volvo also supplies marine and industrial drive systems and financial services."
+    }, {
+        "order": 3,
+        "image": "3.png",
+        "name": "Barilla",
+        "rating": 68.8,
+        "sector": "Food & Beverages",
+        "location": "Italy",
+        "description": "Barilla S.p.A. (Barilla G. e R. Fratelli Società per Azioni) is an Italian food company. The company was founded in 1877 as a bakery shop in Parma, Italy by Pietro Barilla. The company is privately held, and remains in the fourth generation of Barilla family ownership and control through three brothers, Chairman Guido Barilla, and Vice Chairmen Luca Barilla and Paolo Barilla."
+
+    }, {
+        "order": 4,
+        "image": "4.png",
+        "name": "Burberry",
+        "rating": 76.5,
+        "sector": "Fashion",
+        "location": "United Kingdom",
+        "description": "Burberry Group Inc is an English luxury fashion house, headquartered in London, England. Its main fashion house focuses on and distributes ready-to-wear outerwear, fashion accessories, fragrances, sunglasses, and cosmetics."
+    }, {
+        "order": 5,
+        "image": "5.png",
+        "name": "Pepsi",
+        "rating": 64.3,
+        "sector": "Food & Beverages",
+        "location": "United States",
+        "description": "Pepsi (currently stylized as pepsi and formerly stylized as PEPSI) is an American carbonated soft drink produced and manufactured by PepsiCo. Originally created and developed in 1893 and introduced as \"Brad's Drink\", it was renamed as Pepsi-Cola on August 28, 1898, and then as Pepsi in 1961. It is currently known in North America alternatively as Pepsi-Cola as of 2014."
+    }, {
+        "order": 6,
+        "image": "6.png",
+        "name": "AT&T",
+        "rating": 75.9,
+        "sector": "Telecommunications",
+        "location": "United States",
+        "description": "AT&T Inc. is an American multinational telecommunications conglomerate, headquartered at Whitacre Tower in downtown Dallas, Texas. AT&T is the second largest provider of mobile telephone services and the largest provider of fixed telephone services in the United States, and also provides broadband subscription television services through DirecTV."
+    }, {
+        "order": 7,
+        "image": "7.png",
+        "name": "Cholé",
+        "rating": 63.1,
+        "sector": "Fashion",
+        "location": "France",
+        "description": "Chloé is a French fashion house founded in 1952 by Gaby Aghion. Aghion later joined forces with Jacques Lenoir in 1953, formally managing the business side of the brand, allowing Aghion to purely pursue the creative growth of Chloé. The house is owned by luxury brands holding company Richemont Group. Chloé has been worn by many celebrities, including Marion Cotillard, Sienna Miller, Madonna, January Jones, Maggie Gyllenhaal, Cameron Diaz, Emma Stone, Clémence Poésy and Katie Holmes."
+    }, {
+        "order": 8,
+        "image": "8.png",
+        "name": "Ikea",
+        "rating": 77.0,
+        "sector": "Furniture",
+        "location": "Sweden",
+        "description": "IKEA is a multinational group of companies that designs and sells ready-to-assemble furniture (such as beds, chairs and desks), appliances and home accessories. As of January 2008, it is the world's largest furniture retailer. The company is known for its modern architectural designs for various types of appliances and furniture, and its interior design work is often associated with an eco-friendly simplicity."
+    }, {
+        "order": 9,
+        "image": "9.png",
+        "name": "Coca-Cola",
+        "rating": 88.9,
+        "sector": "Food & Beverages",
+        "location": "United States",
+        "description": "The Coca-Cola Company, which is headquartered in Atlanta, Georgia, is an American multinational beverage corporation, and manufacturer, retailer, and marketer of nonalcoholic beverage concentrates and syrups. The company is best known for its flagship product Coca-Cola, invented in 1886 by pharmacist John Stith Pemberton in Columbus, Georgia."
+    }, {
+        "order": 10,
+        "image": "10.png",
+        "name": "Audi",
+        "rating": 68.8,
+        "sector": "Automotive",
+        "location": "Germany",
+        "description": "Audi AG is a German automobile manufacturer that designs, engineers, produces, markets and distributes luxury vehicles. Audi oversees worldwide operations from its headquarters in Ingolstadt, Bavaria, Germany. Audi-branded vehicles are produced in nine production facilities worldwide."
+    }, {
+        "order": 11,
+        "image": "11.png",
+        "name": "Lamborghini",
+        "rating": 76.4,
+        "sector": "Automotive",
+        "location": "Italy",
+        "description": "Automobili Lamborghini S.p.A. is an Italian brand and manufacturer of luxury sports cars and SUVs based in Sant'Agata Bolognese, Italy. The company is owned by the Volkswagen Group through its subsidiary Audi."
+    }, {
+        "order": 12,
+        "image": "12.png",
+        "name": "Storck",
+        "rating": 67.4,
+        "sector": "Food & Beverages",
+        "location": "Germany",
+        "description": "August Storck KG is a German sweets producer with headquarters in Berlin, owned by Axel Oberwelland. Its subsidiary in the UK has been the company Bendicks in Winchester since 1988. The main facility of Storck in Germany is in Halle, North Rhine-Westphalia, one is located in Skanderborg, Denmark and another one in Ohrdruf, Germany."
+    }, {
+        "order": 13,
+        "image": "13.png",
+        "name": "Festina",
+        "rating": 58.2,
+        "sector": "Fashion",
+        "location": "Spain",
+        "description": "Festina is a watch manufacturer. The company was founded in 1902 in La Chaux-de-Fonds, Switzerland. The manufacture's motto was Festina Lente (Latin for 'Hasten slowly'). In 1984, entrepreneur Miguel Rodríguez, already owner of Lotus watches, bought Festina and created the group Festina Lotus S.A.. Since this takeover, the company headquarters have been located in Barcelona, Spain. Their watches are exclusively assembled on Citizen Watch Company Japanese movements, in their most popular watches, while its high-end watches are designed and crafted entirely from its factories in China called Heschen."
+    }, {
+        "order": 14,
+        "image": "14.png",
+        "name": "IBM",
+        "rating": 75.9,
+        "sector": "Technology",
+        "location": "United States",
+        "description": "International Business Machines Corporation (commonly referred to as IBM) is an American multinational technology company headquartered in Armonk, New York, United States, with operations in over 170 countries. IBM manufactures and markets computer hardware, middleware and software, and offers hosting and consulting services in areas ranging from mainframe computers to nanotechnology. Inventions by IBM include the automated teller machine (ATM), the floppy disk, the hard disk drive, the magnetic stripe card, the relational database, the SQL programming language, the UPC barcode, and dynamic random-access memory (DRAM)."
+    }, {
+        "order": 15,
+        "image": "15.png",
+        "name": "Apple",
+        "rating": 97.3,
+        "sector": "Technology",
+        "location": "United States",
+        "description": "Apple Inc. is an American multinational technology company headquartered in Cupertino, California, that designs, develops, and sells consumer electronics, computer software, and online services. Its hardware products include the iPhone smartphone, the iPad tablet computer, the Mac personal computer, the iPod portable media player, the Apple Watch smartwatch, and the Apple TV digital media player. Apple's consumer software includes the macOS and iOS operating systems, the iTunes media player, the Safari web browser, and the iLife and iWork creativity and productivity suites."
+    }, {
+        "order": 16,
+        "image": "16.png",
+        "name": "Red Bull",
+        "rating": 77.3,
+        "sector": "Food & Beverages",
+        "location": "Austria",
+        "description": "Red Bull is an energy drink sold by Austrian company Red Bull GmbH, created in 1987. In terms of market share, Red Bull is the highest-selling energy drink in the world, with 5.387 billion cans sold in 2013."
+    }, {
+        "order": 17,
+        "image": "17.png",
+        "name": "Nike",
+        "rating": 85.4,
+        "sector": "Fashion",
+        "location": "United States",
+        "description": "Nike, Inc. is an American multinational corporation that is engaged in the design, development, manufacturing and worldwide marketing and sales of footwear, apparel, equipment, accessories and services. The company is headquartered near Beaverton, Oregon, in the Portland metropolitan area. It is one of the world's largest suppliers of athletic shoes and apparel and a major manufacturer of sports equipment, with revenue in excess of US$24.1 billion in its fiscal year 2012 (ending May 31, 2012). As of 2012, it employed more than 44,000 people worldwide. In 2014 the brand alone was valued at $19 billion, making it the most valuable brand among sports businesses."
+    }, {
+        "order": 18,
+        "image": "18.png",
+        "name": "The North Face",
+        "rating": 68.2,
+        "sector": "Fashion",
+        "location": "United States",
+        "description": "The North Face, Inc. is an American outdoor product company specializing in outerwear, fleece, coats, shirts, footwear, and equipment such as backpacks, tents, and sleeping bags."
+    }, {
+        "order": 19,
+        "image": "19.png",
+        "name": "Ray-Ban",
+        "rating": 68.8,
+        "sector": "Fashion",
+        "location": "United States",
+        "description": "Ray-Ban is a brand of sunglasses and eyeglasses founded in 1937 by American company Bausch & Lomb. The brand is best known for their Wayfarer and Aviator styles of sunglasses. In 1999, Bausch & Lomb sold the brand to the Italian Luxottica Group for a reported $640 million."
+    }, {
+        "order": 20,
+        "image": "20.png",
+        "name": "Shell",
+        "rating": 89.0,
+        "sector": "Oil & Gas",
+        "location": "Netherlands",
+        "description": "Royal Dutch Shell plc, commonly known as Shell, is an Anglo-Dutch multinational oil and gas company headquartered in the Netherlands and incorporated in the United Kingdom. Created by the merger of Royal Dutch Petroleum and UK-based Shell Transport & Trading, it is the seventh largest company in the world as of 2016, in terms of revenue, and one of the six oil and gas \"supermajors\". Shell is also one of the world's most valuable companies."
+    }, {
+        "order": 21,
+        "image": "21.png",
+        "name": "3M",
+        "rating": 58.4,
+        "sector": "Manufacturing",
+        "location": "United States",
+        "description": "The 3M Company, formerly known as the Minnesota Mining and Manufacturing Company (1902–2002), is an American multinational conglomerate corporation based in Maplewood, Minnesota, a suburb of St. Paul. With $30 billion in annual sales, 3M employs 88,000 people worldwide and produces more than 55,000 products, including: adhesives, abrasives, laminates, passive fire protection, dental and orthodontic products, electronic materials, medical products, car-care products (sun films, polish, wax, car shampoo, treatment for the exterior, interior and the under chassis rust protection), electronic circuits, and optical films."
+    }, {
+        "order": 22,
+        "image": "22.png",
+        "name": "Blackberry",
+        "rating": 65.4,
+        "sector": "Technology",
+        "location": "Canada",
+        "description": "BlackBerry Limited, formerly known as Research In Motion Limited (RIM), is a Canadian multinational telecommunication and wireless equipment company best known to the general public as the developer of the BlackBerry brand of smartphones and tablets, but also well known worldwide as a provider of secure and high reliability software for industrial applications and mobile device management (MDM). QNX, a subsidiary of BlackBerry, is widely recognised as a leader in automotive software industry. BlackBerry's software and hardware products are used worldwide by various government's agencies and by car makers and industrial plants throughout the world, much of this activity being unseen by the public."
+    }, {
+        "order": 23,
+        "image": "23.png",
+        "name": "Kawasaki",
+        "rating": 63.1,
+        "sector": "Automotive",
+        "location": "Japan",
+        "description": "Kawasaki Heavy Industries Ltd. (KHI) (川崎重工業株式会社 Kawasaki Jūkōgyō Kabushiki-gaisha) is a Japanese public multinational corporation primarily known as a manufacturer of motorcycles, heavy equipment, aerospace and defense. It has headquarters in both Chūō-ku, Kobe and Minato, Tokyo."
+    }, {
+        "order": 24,
+        "image": "24.png",
+        "name": "Starbucks",
+        "rating": 78.2,
+        "sector": "Food & Beverages",
+        "location": "United States",
+        "description": "Starbucks Corporation is an American coffee company and coffeehouse chain. Starbucks was founded in Seattle, Washington in 1971. Starbucks is considered the main representative of \"second wave coffee\", initially distinguishing itself from other coffee-serving venues in the US by taste, quality, and customer experience, while popularizing darkly roasted coffee. Since the 2000s, third wave coffee makers have targeted quality-minded coffee drinkers with hand-made coffee based on lighter roasts, while Starbucks nowadays uses automated espresso machines for efficiency and safety reasons."
+    }
+]
