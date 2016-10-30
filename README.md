@@ -1,5 +1,5 @@
 # QuadricApp
-A sample application created with React.js + Koa + MongoDB for an application to an internship at [Quadric](http://quadric.net/).
+A sample application created with React.js + Koa + MongoDB for an application for an internship at [Quadric](http://quadric.net/).
 
 Uses the a wonderful boilerplate created by wwsun, with a few extra things added. Check it out [here](https://github.com/wwsun/starter-node-react)! 
 
