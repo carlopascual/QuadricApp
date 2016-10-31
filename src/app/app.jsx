@@ -13,7 +13,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ReactDOMServer from 'react-dom/server';
 
-//import AppRoot from './components/AppRoot.jsx';
 import AppRoutes from './appRoutes.jsx';
 
 class App {

@@ -7,6 +7,7 @@ Uses a wonderful boilerplate created by wwsun, with a few extra things added. Ch
 * Company list: based on the design specified
 * A modal which, on click, displays further information about the company
 * A simple, interactive comments section
+
 ## Running
 
 ### Setting up the database
