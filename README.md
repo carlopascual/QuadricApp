@@ -11,7 +11,7 @@ Uses a wonderful boilerplate created by wwsun, with a few extra things added. Ch
 ## Running
 
 ### Setting up the database
-This application uses a database named *quadric* via mongoDB so we'll have to set it up first. A json file for the sample setup can be found at *src/app/resources/json/companies.json*. [Here is a tutorial on how to import json files into mongoDB.](https://docs.mongodb.com/getting-started/shell/import-data/) 
+This application uses a database named *quadric* via mongoDB so we'll have to set it up first. [Here is a tutorial on how to import json files into mongoDB.](https://docs.mongodb.com/getting-started/shell/import-data/) A json file as well as a readme for the sample setup can be found at *src/app/resources/json/*.
 
 Note that you'll need to include the --jsonArray flag for our particular json file. A sample import statement with the proper attributes can also be found in the same folder.
 
