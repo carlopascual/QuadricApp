@@ -78607,7 +78607,7 @@
 			}
 	
 			/*
-	  * 	handleCommentPosted(String name, String comment)
+	  * 	handleCommentPostedCallback(String name, String comment)
 	  *
 	  *	Description: calls an AJAX request for the company list that needs to be
 	  *				 rendered, then pushes the new value into the current state.
@@ -79028,7 +79028,10 @@
 		return ItemView;
 	}(_react2.default.Component);
 	
-	ItemView.propTypes = { modalClosedCallback: _react2.default.PropTypes.func.isRequired };
+	ItemView.propTypes = {
+		modalClosedCallback: _react2.default.PropTypes.func.isRequired,
+		handleCommentPosted: _react2.default.PropTypes.func.isRequired
+	};
 	
 	exports.default = ItemView;
 

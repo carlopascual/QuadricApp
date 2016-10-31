@@ -250,6 +250,9 @@ class ItemView extends React.Component {
   	}
 }
 
-ItemView.propTypes = {modalClosedCallback: React.PropTypes.func.isRequired};
+ItemView.propTypes = {
+	modalClosedCallback: React.PropTypes.func.isRequired,
+	handleCommentPosted: React.PropTypes.func.isRequired
+};
 
 export default ItemView;

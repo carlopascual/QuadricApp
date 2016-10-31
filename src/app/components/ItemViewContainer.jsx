@@ -147,7 +147,7 @@ class ItemViewContainer extends React.Component {
 	}
 
 	/*
-	* 	handleCommentPosted(String name, String comment)
+	* 	handleCommentPostedCallback(String name, String comment)
 	*
 	*	Description: calls an AJAX request for the company list that needs to be
 	*				 rendered, then pushes the new value into the current state.
