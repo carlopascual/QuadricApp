@@ -110,9 +110,6 @@
 	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ***********************************************************************
 	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     */
 	
-	//import AppRoot from './components/AppRoot.jsx';
-	
-	
 	var _react = __webpack_require__(3);
 	
 	var _react2 = _interopRequireDefault(_react);
@@ -30361,7 +30358,7 @@
 	
 	var _CompanyList2 = _interopRequireDefault(_CompanyList);
 	
-	var _jquery = __webpack_require__(610);
+	var _jquery = __webpack_require__(584);
 	
 	var _jquery2 = _interopRequireDefault(_jquery);
 	
@@ -30381,6 +30378,8 @@
 	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               * 
 	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ***********************************************************************
 	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               */
+	
+	var imageDirectory = __webpack_require__(585);
 	
 	var CompanyListContainer = function (_React$Component) {
 		_inherits(CompanyListContainer, _React$Component);
@@ -30421,9 +30420,17 @@
 	
 				_jquery2.default.ajax({
 					url: "/api/companies/",
-					type: "get",
+					type: "GET",
 					success: function success(response) {
-						self.setState({ retrievedEntries: response });
+	
+						var companyList = response;
+	
+						//change image directory to appropriate buit directory
+						for (var i = 0; i < response.length; i++) {
+							companyList[i].image = imageDirectory("./" + response[i].image);
+						}
+	
+						self.setState({ retrievedEntries: companyList });
 					},
 					error: function error(xhr) {
 						throw new Error('An error retrieving entries has occurred.');
@@ -30613,8 +30620,6 @@
 	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ***********************************************************************
 	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               */
 	
-	var imageDirectory = __webpack_require__(584);
-	
 	var CompanyEntry = function (_React$Component) {
 	    _inherits(CompanyEntry, _React$Component);
 	
@@ -30738,7 +30743,7 @@
 	                    _react2.default.createElement(
 	                        'div',
 	                        { style: imageStyle },
-	                        _react2.default.createElement(_Image2.default, { src: imageDirectory("./" + entry.image) })
+	                        _react2.default.createElement(_Image2.default, { src: entry.image })
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
@@ -67993,201 +67998,6 @@
 /* 584 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var map = {
-		"./1.png": 585,
-		"./10.png": 586,
-		"./11.png": 587,
-		"./12.png": 588,
-		"./13.png": 589,
-		"./14.png": 590,
-		"./15.png": 591,
-		"./16.png": 592,
-		"./17.png": 593,
-		"./18.png": 594,
-		"./19.png": 595,
-		"./2.png": 596,
-		"./20.png": 597,
-		"./21.png": 598,
-		"./22.png": 599,
-		"./23.png": 600,
-		"./24.png": 601,
-		"./3.png": 602,
-		"./4.png": 603,
-		"./5.png": 604,
-		"./6.png": 605,
-		"./7.png": 606,
-		"./8.png": 607,
-		"./9.png": 608,
-		"./blank.png": 609
-	};
-	function webpackContext(req) {
-		return __webpack_require__(webpackContextResolve(req));
-	};
-	function webpackContextResolve(req) {
-		return map[req] || (function() { throw new Error("Cannot find module '" + req + "'.") }());
-	};
-	webpackContext.keys = function webpackContextKeys() {
-		return Object.keys(map);
-	};
-	webpackContext.resolve = webpackContextResolve;
-	module.exports = webpackContext;
-	webpackContext.id = 584;
-
-
-/***/ },
-/* 585 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "img/img-5a062c.png";
-
-/***/ },
-/* 586 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "img/img-ebbb29.png";
-
-/***/ },
-/* 587 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "img/img-f6f392.png";
-
-/***/ },
-/* 588 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "img/img-39ce51.png";
-
-/***/ },
-/* 589 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "img/img-00c4d5.png";
-
-/***/ },
-/* 590 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "img/img-d7a161.png";
-
-/***/ },
-/* 591 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "img/img-47cc9e.png";
-
-/***/ },
-/* 592 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "img/img-27a6bf.png";
-
-/***/ },
-/* 593 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "img/img-5e8e40.png";
-
-/***/ },
-/* 594 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "img/img-ad09e7.png";
-
-/***/ },
-/* 595 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "img/img-e4bb67.png";
-
-/***/ },
-/* 596 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "img/img-94c892.png";
-
-/***/ },
-/* 597 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "img/img-9bce00.png";
-
-/***/ },
-/* 598 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "img/img-0c72a8.png";
-
-/***/ },
-/* 599 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "img/img-600e8a.png";
-
-/***/ },
-/* 600 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "img/img-5f9d73.png";
-
-/***/ },
-/* 601 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "img/img-38dd4a.png";
-
-/***/ },
-/* 602 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "img/img-93b72a.png";
-
-/***/ },
-/* 603 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "img/img-f0fb51.png";
-
-/***/ },
-/* 604 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "img/img-33ef7f.png";
-
-/***/ },
-/* 605 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "img/img-8756b1.png";
-
-/***/ },
-/* 606 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "img/img-4c4fef.png";
-
-/***/ },
-/* 607 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "img/img-285730.png";
-
-/***/ },
-/* 608 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "img/img-952bc8.png";
-
-/***/ },
-/* 609 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "img/img-fa5ad2.png";
-
-/***/ },
-/* 610 */
-/***/ function(module, exports, __webpack_require__) {
-
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 	 * jQuery JavaScript Library v3.1.1
 	 * https://jquery.com/
@@ -78411,6 +78221,201 @@
 
 
 /***/ },
+/* 585 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var map = {
+		"./1.png": 586,
+		"./10.png": 587,
+		"./11.png": 588,
+		"./12.png": 589,
+		"./13.png": 590,
+		"./14.png": 591,
+		"./15.png": 592,
+		"./16.png": 593,
+		"./17.png": 594,
+		"./18.png": 595,
+		"./19.png": 596,
+		"./2.png": 597,
+		"./20.png": 598,
+		"./21.png": 599,
+		"./22.png": 600,
+		"./23.png": 601,
+		"./24.png": 602,
+		"./3.png": 603,
+		"./4.png": 604,
+		"./5.png": 605,
+		"./6.png": 606,
+		"./7.png": 607,
+		"./8.png": 608,
+		"./9.png": 609,
+		"./blank.png": 610
+	};
+	function webpackContext(req) {
+		return __webpack_require__(webpackContextResolve(req));
+	};
+	function webpackContextResolve(req) {
+		return map[req] || (function() { throw new Error("Cannot find module '" + req + "'.") }());
+	};
+	webpackContext.keys = function webpackContextKeys() {
+		return Object.keys(map);
+	};
+	webpackContext.resolve = webpackContextResolve;
+	module.exports = webpackContext;
+	webpackContext.id = 585;
+
+
+/***/ },
+/* 586 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "img/img-5a062c.png";
+
+/***/ },
+/* 587 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "img/img-ebbb29.png";
+
+/***/ },
+/* 588 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "img/img-f6f392.png";
+
+/***/ },
+/* 589 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "img/img-39ce51.png";
+
+/***/ },
+/* 590 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "img/img-00c4d5.png";
+
+/***/ },
+/* 591 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "img/img-d7a161.png";
+
+/***/ },
+/* 592 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "img/img-47cc9e.png";
+
+/***/ },
+/* 593 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "img/img-27a6bf.png";
+
+/***/ },
+/* 594 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "img/img-5e8e40.png";
+
+/***/ },
+/* 595 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "img/img-ad09e7.png";
+
+/***/ },
+/* 596 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "img/img-e4bb67.png";
+
+/***/ },
+/* 597 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "img/img-94c892.png";
+
+/***/ },
+/* 598 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "img/img-9bce00.png";
+
+/***/ },
+/* 599 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "img/img-0c72a8.png";
+
+/***/ },
+/* 600 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "img/img-600e8a.png";
+
+/***/ },
+/* 601 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "img/img-5f9d73.png";
+
+/***/ },
+/* 602 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "img/img-38dd4a.png";
+
+/***/ },
+/* 603 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "img/img-93b72a.png";
+
+/***/ },
+/* 604 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "img/img-f0fb51.png";
+
+/***/ },
+/* 605 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "img/img-33ef7f.png";
+
+/***/ },
+/* 606 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "img/img-8756b1.png";
+
+/***/ },
+/* 607 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "img/img-4c4fef.png";
+
+/***/ },
+/* 608 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "img/img-285730.png";
+
+/***/ },
+/* 609 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "img/img-952bc8.png";
+
+/***/ },
+/* 610 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "img/img-fa5ad2.png";
+
+/***/ },
 /* 611 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -78426,7 +78431,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _jquery = __webpack_require__(610);
+	var _jquery = __webpack_require__(584);
 	
 	var _jquery2 = _interopRequireDefault(_jquery);
 	
@@ -78450,6 +78455,9 @@
 	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               * 
 	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ***********************************************************************
 	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               */
+	
+	var imageDirectory = __webpack_require__(585);
+	var blankImage = imageDirectory("./blank.png"); //blank image for null values
 	
 	var data = undefined; // database variable
 	
@@ -78503,7 +78511,13 @@
 					url: "/api/companies/",
 					type: "GET",
 					success: function success(response) {
+	
 						data = response; // set database to response
+	
+						//change image directory to appropriate built directory
+						for (var i = 0; i < response.length; i++) {
+							data[i].image = imageDirectory("./" + response[i].image);
+						}
 					},
 					error: function error(xhr) {
 						throw new Error('Error querying database for companies');
@@ -78536,7 +78550,7 @@
 	
 				if (companyEntries == undefined) {
 					// no databaase has been set yet, so no companies to yet
-					this.setState({ companyToRender: null });
+					this.setState({ companyToRender: null, blankImage: blankImage });
 					return;
 				};
 	
@@ -78549,7 +78563,7 @@
 					}
 				}
 	
-				this.setState({ companyToRender: null });
+				this.setState({ companyToRender: null, blankImage: blankImage });
 			}
 	
 			/*
@@ -78733,8 +78747,6 @@
 	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ***********************************************************************
 	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               */
 	
-	var imageDirectory = __webpack_require__(584);
-	
 	var ItemView = function (_React$Component) {
 		_inherits(ItemView, _React$Component);
 	
@@ -78780,7 +78792,7 @@
 				sector: null,
 				location: null,
 				description: null,
-				image: "blank.png",
+				image: _this.props.blankImage,
 				comments: [],
 				show: false
 			};
@@ -78810,7 +78822,7 @@
 						sector: null,
 						location: null,
 						description: null,
-						image: "blank.png",
+						image: this.props.blankImage,
 						comments: [],
 						show: false
 					});
@@ -78957,7 +78969,7 @@
 								_react2.default.createElement(
 									'div',
 									{ style: imageStyle },
-									_react2.default.createElement(_Image2.default, { src: imageDirectory("./" + companyToRender.image) })
+									_react2.default.createElement(_Image2.default, { src: companyToRender.image })
 								),
 								_react2.default.createElement(
 									'div',

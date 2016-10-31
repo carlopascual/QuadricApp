@@ -26,8 +26,6 @@ import Image from 'react-bootstrap/lib/Image';
 import CommentForm from './CommentForm.jsx';
 import CommentList from './CommentList.jsx';
 
-var imageDirectory = require.context("../resources/img/",true,/\.(png|jpg|gif)$/);
-
 class ItemView extends React.Component {
 
 	/*
@@ -70,7 +68,7 @@ class ItemView extends React.Component {
 			sector: null, 
 			location: null, 
 			description: null, 
-			image: "blank.png",
+			image: this.props.blankImage,
 			comments: [],
 			show: false
 		};
@@ -95,7 +93,7 @@ class ItemView extends React.Component {
 				sector: null, 
 				location: null, 
 				description: null, 
-				image: "blank.png",
+				image: this.props.blankImage,
 				comments: [],
 				show: false
 			});
@@ -225,7 +223,7 @@ class ItemView extends React.Component {
 				<div style={dialogStyle}>
 					<div className="container" style={containerStyle}>
 						<div style={imageStyle}>
-							<Image src={imageDirectory("./" + companyToRender.image)}/>
+							<Image src={companyToRender.image}/>
 						</div>
 						<div style={textPlaceHolder}>
 							<div style={informationStyle}> 

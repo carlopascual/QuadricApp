@@ -13,6 +13,8 @@ import React from 'react';
 import CompanyList from './CompanyList.jsx';
 import $ from 'jquery';
 
+var imageDirectory = require.context("../resources/img/",true,/\.(png|jpg|gif)$/);
+
 class CompanyListContainer extends React.Component {
 
 	/*
@@ -43,9 +45,17 @@ class CompanyListContainer extends React.Component {
 
 		$.ajax({
 			url: "/api/companies/",
-			type: "get",
+			type: "GET",
 			success: function(response) {
-				self.setState({retrievedEntries: response});
+
+				var companyList = response;
+
+				//change image directory to appropriate buit directory
+				for(var i = 0; i < response.length; i++) {
+					companyList[i].image = imageDirectory("./" + response[i].image);
+				}
+
+				self.setState({retrievedEntries: companyList});
 		  	},
 		  	error: function(xhr) {
 		    	throw new Error('An error retrieving entries has occurred.');

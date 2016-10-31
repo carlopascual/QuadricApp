@@ -14,6 +14,10 @@ import $ from 'jquery';
 
 import ItemView from './ItemView.jsx';
 
+
+var imageDirectory = require.context("../resources/img/",true,/\.(png|jpg|gif)$/);
+var blankImage = imageDirectory("./blank.png"); //blank image for null values
+
 var data = undefined; // database variable
 
 class ItemViewContainer extends React.Component {
@@ -59,7 +63,13 @@ class ItemViewContainer extends React.Component {
 			url: "/api/companies/",
 		  	type: "GET",
 		  	success: function(response) {
+
 		    	data = response; // set database to response
+
+		    	//change image directory to appropriate built directory
+		    	for(var i = 0; i < response.length; i++) {
+		    		data[i].image = imageDirectory("./" + response[i].image);
+		    	}
 		  	},
 		  	error: function(xhr) {
 		  		throw new Error('Error querying database for companies');
@@ -86,7 +96,7 @@ class ItemViewContainer extends React.Component {
 
 		if(companyEntries == undefined) {
 			// no databaase has been set yet, so no companies to yet
-			this.setState({companyToRender: null});
+			this.setState({ companyToRender: null, blankImage: blankImage });
 			return;
 		};
 
@@ -99,7 +109,7 @@ class ItemViewContainer extends React.Component {
 			}
 		}
 
-		this.setState({companyToRender: null});
+		this.setState( {companyToRender: null, blankImage: blankImage } );
 	}
 
 	/*

@@ -16,8 +16,6 @@ import Image from 'react-bootstrap/lib/Image';
 
 import EllipsisText from 'react-ellipsis-text';
 
-var imageDirectory = require.context("../resources/img/",true,/\.(png|jpg|gif)$/);
-
 class CompanyEntry extends React.Component {
 
     /*
@@ -118,7 +116,7 @@ class CompanyEntry extends React.Component {
             <div>
                 <div style={innerDiv} onMouseOver={this.mouseOver} onMouseOut={this.mouseOut} onClick={this.mouseClick}>
                     <div style={imageStyle}>
-                        <Image src={imageDirectory("./" + entry.image)}/>
+                        <Image src={entry.image}/>
                     </div>
                     <div style={captionStyle}>
                         <div style={{marginTop: "5px"}}>
