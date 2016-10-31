@@ -82608,7 +82608,7 @@
 	              { style: marginTopStyle },
 	              'Comment:'
 	            ),
-	            _react2.default.createElement(_FormControl2.default, { componentClass: 'textarea', placeholder: 'Enter comment' }),
+	            _react2.default.createElement(_FormControl2.default, { style: { maxWidth: "100%" }, componentClass: 'textarea', placeholder: 'Enter comment' }),
 	            _react2.default.createElement(
 	              _Button2.default,
 	              { type: 'submit', value: 'Post', style: marginTopStyle },

@@ -71,7 +71,7 @@ class CommentForm extends React.Component {
               <ControlLabel>Name:</ControlLabel>
               <FormControl type="text" label="text" placeholder="Enter name"/>
               <ControlLabel style={marginTopStyle}>Comment:</ControlLabel>
-              <FormControl componentClass="textarea" placeholder="Enter comment"/>
+              <FormControl style={{maxWidth: "100%"}} componentClass="textarea" placeholder="Enter comment"/>
               <Button type="submit" value="Post" style={marginTopStyle}> Submit </Button>
             </FormGroup>
         </form>
