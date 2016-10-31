@@ -15,7 +15,7 @@ This application uses a database named *quadric* via mongoDB so we'll have to se
 
 Note that you'll need to include the --jsonArray flag for our particular json file. A sample import statement with the proper attributes can also be found in the same folder.
 
-Additional entries can be added into the database, and its icons should be stored inside the *src/app/resources/img* folder.
+Additional entries can be added into the database wlehi its icons should be stored inside the *src/app/resources/img* folder.
 
 ### Install dependencies
     npm install
